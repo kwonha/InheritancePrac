@@ -10,8 +10,13 @@ namespace InheritancePrac
     {
         static void Main(string[] args)
         {
-            List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
-            List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
+            List<Animal> Animals = new List<Animal>() { new Dog(), new Dog(), new Dog(),
+                new Cat(), new Cat(), new Cat() };
+
+
+            //List<Object> Things = new List<Object>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
+            // -> 상속 없이 두 클래스를 합쳐 사용할 수 있다.
+
 
             foreach(var item in Dogs)
             {
