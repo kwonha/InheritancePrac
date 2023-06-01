@@ -23,18 +23,12 @@ namespace InheritancePrac
             // -> 상속 없이 두 클래스를 합쳐 사용할 수 있다.
 
 
-            foreach(var item in Dogs)
-            {
-                item.Eat();
-                item.Sleep();
-                item.Bark();
-            }
 
-            foreach(var item in Cats)
+            foreach(var item in Animals)
             {
                 item.Eat();
                 item.Sleep();
-                item.Meow();
+                ((Dog)item).Bark();
             }
 
         }

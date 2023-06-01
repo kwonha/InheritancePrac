@@ -8,7 +8,7 @@ namespace InheritancePrac
         /// </summary>
         public int Age { get; set; }
 
-        Animal() { this.Age = 0; }
+        public Animal() { this.Age = 0; }
 
         public void Eat()
         {
