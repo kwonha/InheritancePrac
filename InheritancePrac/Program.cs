@@ -10,6 +10,11 @@ namespace InheritancePrac
     {
         static void Main(string[] args)
         {
+
+            Dog dog = new Dog();
+            dog.Public();
+            //dog.Protected();
+            //dog.Private();
             List<Animal> Animals = new List<Animal>() { new Dog(), new Dog(), new Dog(),
                 new Cat(), new Cat(), new Cat() };
 

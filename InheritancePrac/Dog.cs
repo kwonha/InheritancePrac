@@ -11,5 +11,12 @@ namespace InheritancePrac
         {
             Console.WriteLine("왈왈 짖습니다.");
         }
+
+        public void TestB()
+        {
+            //Private();
+            Protected();
+            Public();
+        }
     }
 }
