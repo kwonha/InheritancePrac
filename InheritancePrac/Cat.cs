@@ -12,6 +12,11 @@ namespace InheritancePrac
         {
         }
 
+        public override void Eat()
+        {
+            Console.WriteLine("자박자박 먹습니다.");
+        }
+
         public void Meow()
         {
             Console.WriteLine("냥냥 웁니다.");
