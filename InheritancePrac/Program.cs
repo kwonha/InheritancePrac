@@ -28,7 +28,24 @@ namespace InheritancePrac
             {
                 item.Eat();
                 item.Sleep();
-                ((Dog)item).Bark();
+
+                var _dog = item as Dog;
+                if (_dog != null) { _dog.Bark(); }
+
+                var _cat = item as Cat;
+                if (_cat != null) { _cat.Meow(); }
+
+                if (item is Dog)
+                {
+                    /* var _dog = (Dog)item;
+                     _dog.Bark(); // 이 방법이나*/
+                    ((Dog)item).Bark();
+                }
+                else if(item is Cat) 
+                {
+                    ((Cat)item).Meow(); // 이 방법이나 취향껏, 상황껏
+                }
+               
             }
 
         }
