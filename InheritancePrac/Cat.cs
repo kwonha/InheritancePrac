@@ -12,7 +12,7 @@ namespace InheritancePrac
         {
         }
 
-        public override void Eat()
+        public sealed override void Eat()
         {
             Console.WriteLine("자박자박 먹습니다.");
         }
